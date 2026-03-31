@@ -1,8 +1,7 @@
 # mbodm-traefik
 The Traefik container handling HTTPS for mbodm.com subdomains
 
-# traefik
-
+## Content
 Traefik reverse proxy and HTTPS infrastructure for this VPS.
 
 Owns ports 80 and 443. Handles TLS via Let's Encrypt. Other projects
