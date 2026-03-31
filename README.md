@@ -2,10 +2,12 @@
 The Traefik container handling HTTPS for mbodm.com subdomains
 
 ## Content
-Traefik reverse proxy and HTTPS infrastructure for this VPS.
 
-Owns ports 80 and 443. Handles TLS via Let's Encrypt. Other projects
-connect to it via the shared `traefik-proxy` Docker network.
+Traefik reverse proxy and HTTPS infrastructure for NetCup VPS Docker container web projects
+
+- Owns ports 80 and 443
+- Handles TLS via Let's Encrypt
+- Other projects connect to it via the shared `traefik-proxy` Docker network
 
 ## Setup
 
