@@ -16,9 +16,7 @@ Docker Compose configuration file for Traefik reverse proxy and HTTPS infrastruc
 
 ## Setup
 
-Update the ACME email in `docker-compose.yml` from the placeholder to a real address.
-
-Then run once on the server before starting:
+Run once on the server before starting:
 
     touch acme.json && chmod 600 acme.json
 

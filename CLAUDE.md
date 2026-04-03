@@ -47,4 +47,4 @@ docker compose up -d
 - After Traefik runs, it rewrites `acme.json` as root — fix with `sudo chown $USER:$USER acme.json` if needed
 - The `traefik-proxy` network must be up before dependent projects start
 - `providers.docker.exposedbydefault=false` — containers must opt in via `traefik.enable=true`
-- ACME email in `docker-compose.yml` is a placeholder (`you@example.com`) — must be set to a real address before production use
+- ACME email in `docker-compose.yml` is set to `webmaster@mbodm.com`
