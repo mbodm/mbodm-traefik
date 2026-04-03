@@ -1,6 +1,6 @@
 # mbodm-traefik
 
-Traefik Docker container which handles HTTPS for `mbodm.com` subdomains
+Traefik Docker container that handles HTTPS for `mbodm.com` subdomains
 
 ## Reason
 

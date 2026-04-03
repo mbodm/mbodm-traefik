@@ -17,7 +17,7 @@ Single `docker-compose.yml`, no application code. Pure infrastructure.
 ## Key files
 
 - `docker-compose.yml` — the entire setup
-- `acme.json` — Let's Encrypt certificate storage (created manually, `chmod 600`, not in git)
+- `acme.json` — Let's Encrypt certificate storage (created manually, `chmod 600`, excluded via `.gitignore`)
 
 ## How other projects connect
 
@@ -41,6 +41,12 @@ labels:
 ```bash
 touch acme.json && chmod 600 acme.json
 docker compose up -d
+```
+
+After Traefik runs for the first time, it rewrites `acme.json` as root. Fix ownership if needed:
+
+```bash
+sudo chown $USER:$USER acme.json
 ```
 
 ## Constraints
