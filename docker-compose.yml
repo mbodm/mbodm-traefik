@@ -12,6 +12,7 @@ services:
       - --certificatesresolvers.letsencrypt.acme.tlschallenge=true
       - --providers.docker=true
       - --providers.docker.exposedbydefault=false
+      - --accesslog=true
     ports:
       - "80:80"
       - "443:443"
