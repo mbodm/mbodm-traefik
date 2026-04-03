@@ -4,9 +4,9 @@ Traefik Docker container which handles HTTPS for `mbodm.com` subdomains
 
 ## Reason
 
-To have some centralized HTTPS handling for `mbodm.com` subdomains of various web projects which are using Docker containers
+To have some centralized HTTPS handling for `mbodm.com` subdomains of various web projects that use Docker containers
 
-## Content
+## Overview
 
 Docker Compose configuration file for Traefik reverse proxy and HTTPS infrastructure:
 
@@ -16,13 +16,19 @@ Docker Compose configuration file for Traefik reverse proxy and HTTPS infrastruc
 
 ## Setup
 
-Run once on the server before starting:
+Update the ACME email in `docker-compose.yml` from the placeholder to a real address.
+
+Then run once on the server before starting:
 
     touch acme.json && chmod 600 acme.json
 
 Then start it:
 
     docker compose up -d
+
+After Traefik runs for the first time, it rewrites `acme.json` as root. Fix ownership if needed:
+
+    sudo chown $USER:$USER acme.json
 
 ## Usage (in other projects)
 
