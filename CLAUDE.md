@@ -52,7 +52,6 @@ sudo chown $USER:$USER acme.json
 ## Constraints
 
 - `acme.json` must exist with `600` permissions before starting — Traefik will fail otherwise
-- After Traefik runs, it rewrites `acme.json` as root — fix with `sudo chown $USER:$USER acme.json` if needed
 - The `traefik-proxy` network must be up before dependent projects start
 - `providers.docker.exposedbydefault=false` — containers must opt in via `traefik.enable=true`
 - ACME email in `docker-compose.yml` is set to `webmaster@mbodm.com`
