@@ -30,6 +30,8 @@ After Traefik runs for the first time, it rewrites `acme.json` as root. Fix owne
 
 ## Usage (in other projects)
 
+Subdomain routing is **not configured in this repo**. Each project defines its own subdomain by adding the `traefik-proxy` network and labels to its container. Traefik picks them up automatically via the Docker socket.
+
 Add the `traefik-proxy` network and labels to any container you want exposed:
 
     services:

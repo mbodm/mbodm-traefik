@@ -21,6 +21,8 @@ Single `docker-compose.yml`, no application code. Pure infrastructure.
 
 ## How other projects connect
 
+Subdomain routing is not configured in this repo. Each project defines its own subdomain via Docker labels — Traefik picks them up automatically by watching the Docker socket.
+
 They join the external `traefik-proxy` network and add labels:
 
 ```yaml
