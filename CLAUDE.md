@@ -18,8 +18,8 @@ Single `docker-compose.yml`, no application code. Pure infrastructure.
 
 - `docker-compose.yml` — the entire setup
 - `acme.json` — Let's Encrypt certificate storage (created manually, `chmod 600`, excluded via `.gitignore`)
-- `dcstart.sh` — start the container (`sudo docker compose up -d`)
-- `dclogs.sh` — follow the container logs (`sudo docker compose logs -f`)
+- `dcstart.sh` — script for `sudo docker compose up -d` (just a convenience shortcut)
+- `dclogs.sh` — script for `sudo docker compose logs -f` (just a convenience shortcut)
 
 ## How other projects connect
 
