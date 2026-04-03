@@ -18,11 +18,11 @@ Docker Compose configuration file for Traefik reverse proxy and HTTPS infrastruc
 
 Run once on the server before starting:
 
-    `touch acme.json && chmod 600 acme.json`
+    touch acme.json && chmod 600 acme.json
 
 Then start it:
 
-     `docker compose up` -d or `./dcstart.sh`
+    ./dcstart.sh
 
 After Traefik runs for the first time, it rewrites `acme.json` as root. Fix ownership if needed:
 

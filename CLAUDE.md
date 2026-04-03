@@ -51,6 +51,10 @@ After Traefik runs for the first time, it rewrites `acme.json` as root. Fix owne
 sudo chown $USER:$USER acme.json
 ```
 
+## Image versioning
+
+`traefik:v3` is intentionally a floating major-version tag. The goal is to always run the latest bugfixes and security patches. Do **not** suggest pinning to a specific version.
+
 ## Constraints
 
 - `acme.json` must exist with `600` permissions before starting — Traefik will fail otherwise
