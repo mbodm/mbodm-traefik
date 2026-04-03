@@ -12,6 +12,7 @@ Docker Compose configuration file for Traefik reverse proxy and HTTPS infrastruc
 
 - Owns ports 80 and 443
 - Handles TLS via Let's Encrypt
+- Redirects all HTTP → HTTPS
 - Other Docker-based projects can use it via the shared `traefik-proxy` Docker network
 
 ## Setup
