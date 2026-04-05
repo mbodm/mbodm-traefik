@@ -4,7 +4,7 @@ Traefik Docker container that handles HTTPS for `mbodm.com` subdomains
 
 ## Reason
 
-To have some centralized HTTPS handling for `mbodm.com` subdomains of various web projects that use Docker containers
+To have a centralized HTTPS handling for `mbodm.com` subdomains of various web projects that use Docker containers
 
 ## Overview
 
